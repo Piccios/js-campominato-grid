@@ -1,4 +1,21 @@
 main{
     background-color: aquamarine;
     height: calc(90vh - 100px);
+    margin: 0 auto;
+}
+
+section#grid_100{
+    width: 1000px;
+    height: 1000px;
+    margin: 0 auto;
+}
+
+section#grid_100 > article.square{
+    width: calc((100% / 10) - 4px);
+    height: calc((100% / 10) - 4px);
+}
+
+section#grid_100,
+section#grid_100 article.square{
+    border: 2px solid white;
 }
