@@ -9,6 +9,7 @@ for (let index = 0; index < 100; index++) {
     squareElement.classList.add('square');
     squareElement.addEventListener('click', function(){
         squareElement.classList.add('active');
+        console.log((index) + 1);
     })
 
     squareElement.append((index) + 1);
