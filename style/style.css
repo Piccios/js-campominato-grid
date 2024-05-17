@@ -11,8 +11,8 @@ section#grid_100{
 }
 
 section#grid_100 > article.square{
-    width: calc((100% / 10) - 4px);
-    height: calc((100% / 10) - 4px);
+    width: calc(100% / 10);
+    height: calc(100% / 10);
 }
 
 section#grid_100,
