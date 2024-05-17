@@ -1,11 +1,10 @@
+// Creo una griglia con 100 boxes
+
 const gridElement = document.querySelector('section#grid_100');
 
 
-
-/* <article class="square"></article> */
-
 for (let index = 0; index < 100; index++) {
-    const squareElement = document.createElement('article'); // che sara' il mio <article>
+    const squareElement = document.createElement('article'); 
     squareElement.classList.add('square');
     squareElement.addEventListener('click', function(){
         squareElement.classList.add('active');
@@ -14,4 +13,11 @@ for (let index = 0; index < 100; index++) {
 
     squareElement.append((index) + 1);
     gridElement.appendChild(squareElement);
+    const refreshButton = document.querySelector('button#refresh');
+
+refreshButton.addEventListener('click', function(){squareElement.classList.remove('active');
+}) 
 }
+
+////////////////////////////////////////////////////////
+
