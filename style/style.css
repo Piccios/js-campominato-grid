@@ -1,6 +1,6 @@
 main{
     background-color: aquamarine;
-    height: calc(90vh - 100px);
+    padding: 4rem;
     margin: 0 auto;
 }
 
@@ -8,14 +8,25 @@ section#grid_100{
     width: 1000px;
     height: 1000px;
     margin: 0 auto;
+
 }
 
 section#grid_100 > article.square{
     width: calc(100% / 10);
     height: calc(100% / 10);
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: 400;
+    align-items: center;
+}
+
+section#grid_100 > article.square.active{
+    background-color: rgb(37, 37, 116);
+    color: white;
 }
 
 section#grid_100,
 section#grid_100 article.square{
-    border: 2px solid white;
+    border: 2px solid black;
 }
